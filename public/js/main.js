@@ -1,5 +1,5 @@
 function loadGeoJsonData() {
-  return fetch('/seoul_populationLatLng.geojson').then(response => response.json());
+  return fetch('/hoseo_jooyeon_final/seoul_populationLatLng.geojson').then(response => response.json());
 }
 
 function filterGeoJson() {
@@ -17,7 +17,6 @@ function filterGeoJson() {
     displayResults(filteredFeatures);
   });
 }
-
 var currentPolygon = null; // 현재 활성화된 폴리곤을 추적하기 위한 전역 변수
 function createPolygon(coordinates) {
   // 이전에 생성된 폴리곤이 있다면 지도에서 제거
