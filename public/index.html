@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>김주연 과제</title>
+</head>
+
+
+<script defer src="/js/main.js"></script>
+
+<body>
+  <h1>인구 탐색기</h1>
+
+  <input type="number" id="minPopulation" placeholder="최소 인구">
+  <input type="number" id="maxPopulation" placeholder="최대 인구">
+  <button onclick="filterGeoJson()">검색</button>
+  
+  <div id="content" style="display: flex;">
+    <div id="map" style="width:500px;height:400px;"></div>
+    <div>
+      <h3>검색 결과</h3>
+      <div id="resultList" style="width: 200px;height:400px;"></div>
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d0169460c2db983e0392b679dfeb118a"></script>
+  <script defer>
+    var container = document.getElementById('map');
+    var options = {
+      center: new kakao.maps.LatLng(33.450701, 126.570667),
+      level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
+  </script>
+  
+</body>
+</html>

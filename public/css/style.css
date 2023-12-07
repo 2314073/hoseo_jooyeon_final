@@ -1,0 +1,32 @@
+
+
+/* 테이블 스타일 */
+.results-table {
+  border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+/* 결과 리스트 스타일 */
+#resultList {
+  width: 300px; /* 너비 */
+  height: 500px; /* 높이 */
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+}
+
+/* 테이블 행 스타일 */
+.results-table tr {
+  height: 20px; /* 행 높이 */
+}
+
+/* 마우스 호버 시 셀 스타일 */
+.results-table tr:hover {
+  background-color: #add8e6; /* 밝은 하늘색 */
+  cursor: pointer; /* 클릭 가능한 마우스 포인터 */
+}
+
