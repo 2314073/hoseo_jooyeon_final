@@ -1,5 +1,5 @@
 function loadGeoJsonData() {
-  return fetch('/seoul_populationLatLng.geojson').then(response => response.json());
+  return fetch('seoul_populationLatLng.geojson').then(response => response.json());
 }
 
 function filterGeoJson() {
